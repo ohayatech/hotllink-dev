@@ -13,6 +13,7 @@ function createSlideshow() {
     const slideshow = document.querySelector('.background-slideshow');
     slideshowImages.forEach((src, i) => {
         const img = document.createElement('img');
+        
         img.src = src;
         if (i === 0) img.classList.add('active');
         slideshow.appendChild(img);
